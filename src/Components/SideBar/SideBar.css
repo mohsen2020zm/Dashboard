@@ -1,0 +1,64 @@
+.sidebar-main-div{
+    width: 15rem;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #3d4d55;
+}
+.user-d-div{
+    width: 13rem;
+    height: 6rem;
+    margin: 0 auto 2rem auto;
+    border-bottom: 1px solid #d3c3b9;
+    display: flex;
+    align-items: center;
+}
+.user-d-pic-div{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    margin-left: 1.2rem;
+    background-color: #fff;
+}
+.user-d-pic-div svg{
+    font-size: 3.5rem;
+    color: #dbd9d9;
+}
+.user-d-username{
+    font-size: 1.1rem;
+    color: #d3c3b9;
+}
+.sign-out-btn{
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #b58863;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: #f7f7f7;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.dash-pages-main-div{
+    width: 13rem;
+    margin: 0 auto;
+}
+.dash-page-div{
+    height: 2rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+.dash-page-div a{
+    color: #d3c3b9;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.dash-page-div svg{
+    color: #d3c3b9;
+    font-size: 1.8rem;
+    margin-left: 0.5rem;
+}

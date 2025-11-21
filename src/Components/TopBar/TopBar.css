@@ -1,0 +1,14 @@
+.topbar-main-div{
+    height: 6rem;
+    background-color: #3d4d55;
+    margin-right: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topbar-title{
+    text-align: center;
+    font-size: 2rem;
+    color: #d3c3b9;
+    margin: 0;
+}
