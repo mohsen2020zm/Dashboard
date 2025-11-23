@@ -5,6 +5,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { TbUsers } from "react-icons/tb";
 import { AiOutlineProduct } from "react-icons/ai";
 import { LuClipboardList } from "react-icons/lu";
+import { IoMdAddCircleOutline } from "react-icons/io";
 
 export default function SideBar() {
   return (
@@ -30,7 +31,11 @@ export default function SideBar() {
         </div>
         <div className="dash-page-div">
           <LuClipboardList />
-          <Link to='/all-orders'>لیست سفارشات</Link>
+          <Link to='/all-orders'>فهرست سفارشات</Link>
+        </div>
+        <div className="dash-page-div">
+          <IoMdAddCircleOutline />
+          <Link to='/add-product'>اضافه کردن محصول</Link>
         </div>
       </div>
       <button className='sign-out-btn'>خروج از حساب کاربری</button>

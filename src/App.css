@@ -8,7 +8,7 @@ body{
     padding: 0;
     font-family: shabnam;
 }
-button, input, select{
+button, input, select, textarea{
     font-family: shabnam;
 }
 select:focus{
