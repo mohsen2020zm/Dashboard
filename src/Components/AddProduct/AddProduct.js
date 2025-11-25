@@ -13,15 +13,15 @@ export default function AddProduct() {
             <p className='page-titles'>اضافه کردن محصول</p>
             <div className="add-pros-inputs-parent-div">
                 <div className="add-pros-input-div">
-                    <p className='add-pros-input-title'>نام محصول</p>
+                    <p className='add-pros-input-title'>نام محصول:</p>
                     <input type="text" className='add-pros-input' />
                 </div>
                 <div className="add-pros-input-div">
-                    <p className='add-pros-input-title'>قیمت محصول</p>
+                    <p className='add-pros-input-title'>قیمت محصول:</p>
                     <input type="text" className='add-pros-input' />
                 </div>
                 <div className="add-pros-input-div">
-                    <p className='add-pros-input-title'>توضیحات</p>
+                    <p className='add-pros-input-title'>توضیحات:</p>
                     <textarea className='add-pros-description-input' />
                 </div>
                 <div className="add-pros-input-div">
@@ -35,6 +35,7 @@ export default function AddProduct() {
                     <p className="add-pros-file-name">{fileName}</p>
                 </div>
             </div>
+            <button className='add-pros-btn'>اضافه کردن</button>
         </div>
     </div>
   )

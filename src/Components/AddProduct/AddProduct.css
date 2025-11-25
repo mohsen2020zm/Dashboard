@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 0 2rem 0;
 }
 .add-pros-input-div{
     width: 32rem;
@@ -50,4 +49,15 @@
 }
 .add-pros-file-name{
     font-size: 0.8rem;
+}
+.add-pros-btn{
+    width: 7rem;
+    height: 2.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    border: none;
+    background-color: #b58863;
+    color: #f7f7f7;
+    font-size: 1rem;
+    cursor: pointer;
 }
