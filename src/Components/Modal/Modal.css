@@ -1,0 +1,33 @@
+.modal-main-div{
+    width: 19rem;
+    height: 14rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #3d4d55;
+    border-radius: 5px;
+}
+.modal-message{
+    font-size: 1.2rem;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 0 1rem;
+    margin-top: 3rem;
+}
+.modal-btns-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+.modal-btn{
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #b58863;
+    color: #f7f7f7;
+    font-size: 1rem;
+    cursor: pointer;
+}
