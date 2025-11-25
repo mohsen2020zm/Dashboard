@@ -36,7 +36,7 @@
     display: block;
     width: 7rem;
     height: 2.5rem;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: #b58863;
     color: #f7f7f7;
     font-size: 1rem;
@@ -54,7 +54,7 @@
     width: 7rem;
     height: 2.5rem;
     margin: 1.5rem 0;
-    border-radius: 8px;
+    border-radius: 5px;
     border: none;
     background-color: #b58863;
     color: #f7f7f7;
