@@ -31,7 +31,7 @@ export default function EditModal({details, onclose}) {
         </div>
         <div className="edit-modal-btns-div">
             <button className='edit-modal-btn'>ثبت</button>
-            <button className='edit-modal-btn' onClick={() => onclose()}>انصراف</button>
+            <button className='edit-modal-btn' onClick={onclose}>انصراف</button>
         </div>
     </div>
   )
