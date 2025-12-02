@@ -52,6 +52,9 @@ input:focus, textarea:focus{
     .container{
         max-width: 540px;
     }
+    .dash-page-content-parent{
+        margin-right: 0;
+    }
 }
 @media only screen and (max-width: 480px){
     .container{

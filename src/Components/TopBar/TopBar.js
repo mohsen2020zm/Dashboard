@@ -1,9 +1,12 @@
 import './TopBar.css'
+import { TiThMenu } from "react-icons/ti";
 
-export default function TopBar() {
+export default function TopBar({onOpenMenu}) {
   return (
-    <div className='topbar-main-div'>
+    <nav className='topbar-main-div'>
+      <div className="menu-btn" onClick={onOpenMenu}><TiThMenu /></div>
       <p className='topbar-title'>داشبورد</p>
-    </div>
+      <div className="top-bar-flex-handler"></div>
+    </nav>
   )
 }

@@ -6,9 +6,58 @@
     align-items: center;
     justify-content: center;
 }
+.top-bar-flex-handler{
+    width: 2rem;
+    display: none;
+}
 .topbar-title{
     text-align: center;
     font-size: 2rem;
     color: #d3c3b9;
     margin: 0;
+}
+.menu-btn{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    display: none;
+}
+.menu-btn svg{
+    font-size: 2rem;
+    color: #d3c3b9;
+}
+
+@media only screen and (max-width: 992px){
+    .topbar-title{
+        font-size: 1.9rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .topbar-main-div{
+        height: 5rem;
+        margin-right: 0;
+        justify-content: space-between;
+    }
+    .topbar-title{
+        font-size: 1.7rem;
+    }
+    .top-bar-flex-handler, .menu-btn{
+        display: block;
+    }
+}
+@media only screen and (max-width: 480px){
+    .topbar-main-div{
+        height: 4rem;
+    }
+    .topbar-title{
+        font-size: 1.5rem;
+    }
+    .menu-btn{
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+    .menu-btn svg{
+        font-size: 1.75rem;
+    }
 }
