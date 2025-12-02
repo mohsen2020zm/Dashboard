@@ -15,7 +15,7 @@ select:focus{
     outline: none;
 }
 .container{
-    max-width: 75rem;
+    max-width: 62rem;
     margin-right: auto;
     margin-left: auto;
     padding-right: 1rem;
@@ -40,24 +40,38 @@ input:focus, textarea:focus{
 
 @media only screen and (max-width: 1200px){
     .container{
-        max-width: 960px;
+        max-width: 700px;
+    }
+    .page-titles{
+        margin: 1.5rem 0 1rem 0;
     }
 }
 @media only screen and (max-width: 992px){
     .container{
-        max-width: 720px;
+        max-width: 470px;
+    }
+    .page-titles{
+        font-size: 1.9rem;
+        margin: 1rem 0 0.5rem 0;
     }
 }
 @media only screen and (max-width: 768px){
     .container{
-        max-width: 540px;
+        max-width: 420px;
     }
     .dash-page-content-parent{
         margin-right: 0;
+    }
+    .page-titles{
+        font-size: 1.7rem;
+        margin: 1rem 0 0 0;
     }
 }
 @media only screen and (max-width: 480px){
     .container{
         max-width: 100%;
+    }
+    .page-titles{
+        font-size: 1.5rem;
     }
 }

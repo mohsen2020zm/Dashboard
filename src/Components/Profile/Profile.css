@@ -6,7 +6,7 @@
     padding: 0 0 2rem 0;
 }
 .profile-input-div{
-    width: 32rem;
+    width: 28rem;
     margin: 1rem 0;
 }
 .profile-input-title{
@@ -22,6 +22,7 @@
     border: 1px solid #3d4d55;
     border-radius: 4px;
     font-size: 0.83rem;
+    box-sizing: border-box;
 }
 .profile-btn-div{
     width: 100%;
@@ -36,4 +37,31 @@
     font-size: 1rem;
     cursor: pointer;
     margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1200px){
+    .profile-input-div{
+        width: 21rem;
+    }
+    .profile-input{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 992px){
+    .profile-input-div{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .profile-input-title{
+        font-size: 0.9rem;
+    }
+    .profile-input{
+        font-size: 0.8rem;
+    }
+    .profile-btn{
+        width: 6rem;
+        height: 2.3rem;
+        font-size: 0.9rem;
+    }
 }
