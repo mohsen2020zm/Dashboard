@@ -5,8 +5,8 @@
     flex-wrap: wrap;
 }
 .add-pros-input-div{
-    width: 32rem;
-    margin: 1rem 0;
+    width: 28rem;
+    margin: 0.5rem 0 1rem 0;
 }
 .add-pros-input-title{
     font-size: 1rem;
@@ -21,6 +21,7 @@
     border: 1px solid #3d4d55;
     border-radius: 4px;
     font-size: 0.83rem;
+    box-sizing: border-box;
 }
 .add-pros-description-input{
     width: 80%;
@@ -30,6 +31,7 @@
     border: 1px solid #3d4d55;
     border-radius: 4px;
     font-size: 0.83rem;
+    box-sizing: border-box;
     resize: none;
 }
 .add-pros-file-label{
@@ -60,4 +62,37 @@
     color: #f7f7f7;
     font-size: 1rem;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px){
+    .add-pros-input-div{
+        width: 21rem;
+    }
+    .add-pros-input, .add-pros-description-input{
+        width: 100%;
+    }
+    .add-pros-btn{
+        margin: 0 0 2rem 0;
+    }
+}
+@media only screen and (max-width: 992px){
+    .add-pros-input-div{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .add-pros-input-title{
+        font-size: 0.9rem;
+    }
+    .add-pros-input, .add-pros-description-input{
+        font-size: 0.8rem;
+    }
+    .add-pros-btn, .add-pros-file-label{
+        width: 6rem;
+        height: 2.3rem;
+        font-size: 0.9rem;
+    }
+    .add-pros-file-name{
+        font-size: 0.7rem;
+    }
 }
