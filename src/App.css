@@ -52,7 +52,7 @@ input:focus, textarea:focus{
     }
     .page-titles{
         font-size: 1.9rem;
-        margin: 1rem 0 0.5rem 0;
+        margin: 1rem 0 1rem 0;
     }
 }
 @media only screen and (max-width: 768px){
@@ -64,7 +64,6 @@ input:focus, textarea:focus{
     }
     .page-titles{
         font-size: 1.7rem;
-        margin: 1rem 0 0 0;
     }
 }
 @media only screen and (max-width: 480px){

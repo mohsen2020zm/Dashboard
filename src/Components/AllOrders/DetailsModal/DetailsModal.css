@@ -6,6 +6,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: hsl(200, 16%, 29%);
+    box-shadow: 0px 0px 10px -4px #000;
     border-radius: 5px;
 }
 .details-modal-p{
@@ -21,7 +22,7 @@
     justify-content: center;
 }
 .details-modal-close-btn{
-    width: 6rem;
+    width: 5rem;
     height: 2rem;
     border: none;
     border-radius: 5px;
@@ -32,3 +33,31 @@
     margin-top: 0.5rem;
 }
 
+@media only screen and (max-width: 768px){
+    .details-modal-main-div{
+        width: 23rem;
+        height: 21rem;
+    }
+    .details-modal-p{
+        font-size: 1rem;
+    }
+    .details-modal-close-btn{
+        width: 4.8rem;
+        height: 1.8rem;
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .details-modal-main-div{
+        width: 19rem;
+        height: 19rem;
+    }
+    .details-modal-p{
+        font-size: 0.9rem;
+    }
+    .details-modal-close-btn{
+        width: 4rem;
+        height: 1.7rem;
+        font-size: 0.8rem;
+    }
+}

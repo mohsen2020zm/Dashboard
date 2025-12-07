@@ -3,7 +3,7 @@
     margin-bottom: 1.5rem;
 }
 .all-ords-select-box{
-    width: 7rem;
+    width: 6rem;
     height: 2rem;
     padding: 0 0.2rem;
     border: none;
@@ -11,9 +11,11 @@
     background-color: #b58863;
     color: #f7f7f7;
     font-size: 0.9rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
 }
 .all-ords-details-modal-btn{
-    width: 8rem;
+    width: 5.5rem;
     height: 2rem;
     border: none;
     border-radius: 5px;
@@ -21,4 +23,44 @@
     color: #f7f7f7;
     font-size: 1rem;
     cursor: pointer;
+}
+.all-ords-flex-handle-details-div{
+    width: 5.5rem;
+}
+.all-ords-flex-handle-status-div{
+    width: 6rem;
+    margin: 0 0.5rem;
+}
+
+@media only screen and (max-width: 992px){
+    .all-ords-select-box, .all-ords-flex-handle-status-div{
+        height: 1.7rem;
+        width: 4rem;
+        font-size: 0.5rem;
+    }
+    .all-ords-details-modal-btn, .all-ords-flex-handle-details-div{
+        height: 1.7rem;
+        width: 3.5rem;
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .all-ords-select-box, .all-ords-flex-handle-status-div{
+        height: 1.5rem;
+    }
+    .all-ords-details-modal-btn, .all-ords-flex-handle-details-div{
+        height: 1.5rem;
+        width: 3rem;
+        font-size: 0.6rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .all-ords-select-box, .all-ords-flex-handle-status-div{
+        width: 3.5rem;
+        font-size: 0.4rem;
+    }
+    .all-ords-details-modal-btn, .all-ords-flex-handle-details-div{
+        width: 2.8rem;
+        font-size: 0.5rem;
+    }
 }

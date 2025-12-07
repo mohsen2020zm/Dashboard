@@ -6,6 +6,7 @@
     top: 0;
     background-color: #3d4d55;
     transition: all 0.1s;
+    z-index: 0;
 }
 .close-menu-btn{
     width: 1.6rem;

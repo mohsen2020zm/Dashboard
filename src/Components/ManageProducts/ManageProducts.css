@@ -3,7 +3,7 @@
     margin-bottom: 1.5rem;
 }
 .manage-pros-btn{
-    width: 6rem;
+    width: 5.5rem;
     height: 2rem;
     border: none;
     border-radius: 5px;
@@ -11,4 +11,30 @@
     color: #f7f7f7;
     font-size: 1rem;
     cursor: pointer;
+    margin: 0 0.25rem;
+}
+.manage-pros-flex-handle-div{
+    width: 5.5rem;
+    margin: 0 0.25rem;
+}
+
+@media only screen and (max-width: 992px){
+    .manage-pros-btn, .manage-pros-flex-handle-div{
+        height: 1.7rem;
+        width: 3.5rem;
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .manage-pros-btn, .manage-pros-flex-handle-div{
+        height: 1.5rem;
+        width: 3rem;
+        font-size: 0.6rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .manage-pros-btn, .manage-pros-flex-handle-div{
+        width: 2.8rem;
+        font-size: 0.5rem;
+    }
 }
