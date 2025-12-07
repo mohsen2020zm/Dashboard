@@ -1,13 +1,23 @@
 import './AllOrders.css'
+import { useEffect, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import Row from '../Row/Row'
 import DetailsModal from './DetailsModal/DetailsModal'
 import data from '../../Data/data.json'
-import { useState } from 'react'
 
 export default function AllOrders() {
 
   const [modalToglle, setModalToglle] = useState(false)
   const [orderDetails, setOrderDetails] = useState({})
+  const [filteredOrders, setFilteredOrders] = useState([])
+
+  const [searchParams, setSearchParams] = useSearchParams()
+
+  useEffect(() => {
+    const query = searchParams.get('q') || ''
+    let filter = data.orders.filter(order => order.id.includes(query))
+    setFilteredOrders(filter)
+  },[searchParams])
 
   const faNumHandler = completeDate => {
     let splitedDate = completeDate.split(' ')
@@ -24,14 +34,21 @@ export default function AllOrders() {
       {modalToglle && <DetailsModal {...orderDetails} date={faNumHandler(orderDetails.date)} onClose={() => setModalToglle(false)} />}
       <div className='dash-page-content-parent'>
           <div className="container">
-              <p className='page-titles'>فهرست سفارشات</p>
+              <div className="pages-nav-bar">
+                <p className='page-titles'>فهرست سفارشات</p>
+                <input
+                type="number"
+                placeholder='کد سفارش را وارد کنید...'
+                className='pages-nav-bar-input'
+                onChange={e => setSearchParams({q: e.target.value})} />
+              </div>
                 <div className="all-ords-main-div">
                   <Row borderDetails='1px solid #3d4d55' column1='نام کاربر' column2='نام محصول' column3='تاریخ سفارش' >
                     <div className='all-ords-flex-handle-status-div'></div>
                     <div className='all-ords-flex-handle-details-div'></div>
                   </Row>
                   {
-                  data.orders.map(ord =>
+                  filteredOrders.map(ord =>
                     <Row key={ord.id} column1={ord.user} column2={ord.productName} column3={faNumHandler(ord.date)} >
                       <select className='all-ords-select-box' value={ord.status}>
                           <option value="sending">درحال ارسال</option>
