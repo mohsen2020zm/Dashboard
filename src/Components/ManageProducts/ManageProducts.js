@@ -37,19 +37,20 @@ export default function ManageProducts() {
                 className='pages-nav-bar-input'
                 onChange={e => setSearchParams({q: e.target.value})} />
               </div>
-
-              <div className="manage-pros-main-div">
-                <Row borderDetails='1px solid #3d4d55' column1='نام محصول' column2='قیمت' column3='موجودی' >
-                  <div className='manage-pros-flex-handle-div'></div>
-                  <div className='manage-pros-flex-handle-div'></div>
-                </Row>
-
-                {filteredProducts.map(prod =>
-                  <Row key={prod.id} column1={prod.name} column2={`${faNumHandler(prod.price)} تومان`} column3={`${faNumHandler(prod.inventory)} عدد`}>
-                    <button className='manage-pros-btn' onClick={() => editHandler(prod)}>ویرایش</button>
-                    <button className='manage-pros-btn'>حذف</button>
+              <div className="scroll-div">
+                <div className="manage-pros-main-div">
+                  <Row column1='نام محصول' column2='قیمت' column3='موجودی' >
+                    <div className='manage-pros-flex-handle-div'></div>
+                    <div className='manage-pros-flex-handle-div'></div>
                   </Row>
-                )}
+
+                  {filteredProducts.map(prod =>
+                    <Row key={prod.id} column1={prod.name} column2={`${faNumHandler(prod.price)} تومان`} column3={`${faNumHandler(prod.inventory)} عدد`}>
+                      <button className='manage-pros-btn' onClick={() => editHandler(prod)}>ویرایش</button>
+                      <button className='manage-pros-btn'>حذف</button>
+                    </Row>
+                  )}
+                </div>
               </div>
           </div>
       </div>

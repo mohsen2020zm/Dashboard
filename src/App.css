@@ -41,6 +41,9 @@ select:focus{
     border-radius: 4px;
     font-size: 0.83rem;
 }
+.scroll-div{
+    width: 100%;
+}
 .dash-page-content-parent{
     margin-right: 15rem;
 }
@@ -86,6 +89,9 @@ input:focus, textarea:focus{
         width: 12rem;
         height: 1.7rem;
         font-size: 0.8rem;
+    }
+    .scroll-div{
+        overflow-x: scroll;
     }
 }
 @media only screen and (max-width: 480px){

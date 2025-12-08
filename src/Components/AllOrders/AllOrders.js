@@ -42,21 +42,23 @@ export default function AllOrders() {
                 className='pages-nav-bar-input'
                 onChange={e => setSearchParams({q: e.target.value})} />
               </div>
-                <div className="all-ords-main-div">
-                  <Row borderDetails='1px solid #3d4d55' column1='نام کاربر' column2='نام محصول' column3='تاریخ سفارش' >
-                    <div className='all-ords-flex-handle-status-div'></div>
-                    <div className='all-ords-flex-handle-details-div'></div>
-                  </Row>
-                  {
-                  filteredOrders.map(ord =>
-                    <Row key={ord.id} column1={ord.user} column2={ord.productName} column3={faNumHandler(ord.date)} >
-                      <select className='all-ords-select-box' value={ord.status}>
-                          <option value="sending">درحال ارسال</option>
-                          <option value="complete">تکمیل شده</option>
-                      </select>
-                      <button className="all-ords-details-modal-btn" onClick={() => modalHandler(ord)}>جزییات</button>
-                    </Row>)
-                  }
+                <div className="scroll-div">
+                  <div className="all-ords-main-div">
+                    <Row column1='نام کاربر' column2='نام محصول' column3='تاریخ سفارش' >
+                      <div className='all-ords-flex-handle-status-div'></div>
+                      <div className='all-ords-flex-handle-details-div'></div>
+                    </Row>
+                    {
+                    filteredOrders.map(ord =>
+                      <Row key={ord.id} column1={ord.user} column2={ord.productName} column3={faNumHandler(ord.date)} >
+                        <select className='all-ords-select-box' value={ord.status}>
+                            <option value="sending">درحال ارسال</option>
+                            <option value="complete">تکمیل شده</option>
+                        </select>
+                        <button className="all-ords-details-modal-btn" onClick={() => modalHandler(ord)}>جزییات</button>
+                      </Row>)
+                    }
+                  </div>
                 </div>
           </div>
       </div>

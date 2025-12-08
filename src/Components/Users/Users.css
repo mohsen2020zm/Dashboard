@@ -2,3 +2,14 @@
     width: 100%;
     margin-bottom: 1.5rem;
 }
+
+@media only screen and (max-width: 768px){
+    .users-main-div{
+        width: 36rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .users-main-div{
+        width: 30rem;
+    }
+}

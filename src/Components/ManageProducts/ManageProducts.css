@@ -3,7 +3,7 @@
     margin-bottom: 1.5rem;
 }
 .manage-pros-btn{
-    width: 5.5rem;
+    width: 5rem;
     height: 2rem;
     border: none;
     border-radius: 5px;
@@ -26,15 +26,16 @@
     }
 }
 @media only screen and (max-width: 768px){
+    .manage-pros-main-div{
+        width: 36rem;
+    }
     .manage-pros-btn, .manage-pros-flex-handle-div{
-        height: 1.5rem;
-        width: 3rem;
+        height: 1.6rem;
         font-size: 0.6rem;
     }
 }
 @media only screen and (max-width: 480px){
-    .manage-pros-btn, .manage-pros-flex-handle-div{
-        width: 2.8rem;
-        font-size: 0.5rem;
+    .manage-pros-main-div{
+        width: 30rem;
     }
 }
