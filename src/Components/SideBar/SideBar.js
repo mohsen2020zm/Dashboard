@@ -39,12 +39,12 @@ export default function SideBar({onCloseMenu}) {
             <Link to='/users' onClick={closeMenu}>فهرست کاربران</Link>
           </div>
           <div className="dash-page-div">
-            <AiOutlineProduct />
-            <Link to='/manage-products' onClick={closeMenu}>مدیریت محصولات</Link>
-          </div>
-          <div className="dash-page-div">
             <LuClipboardList />
             <Link to='/all-orders' onClick={closeMenu}>فهرست سفارشات</Link>
+          </div>
+          <div className="dash-page-div">
+            <AiOutlineProduct />
+            <Link to='/manage-products' onClick={closeMenu}>مدیریت محصولات</Link>
           </div>
           <div className="dash-page-div">
             <IoMdAddCircleOutline />
