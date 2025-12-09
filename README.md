@@ -14,8 +14,7 @@ A **Admin Dashboard** project built with **React.js**.
 ## 📦 Tech Stack
 - **React.js**  
 - **react-router-dom**  
-- **JavaScript (ES6+)**  
-- **CSS**
+- **JavaScript (ES6+)** 
 
 ---
 
