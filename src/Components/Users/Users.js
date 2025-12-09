@@ -29,9 +29,14 @@ export default function Users() {
           </div>
           <div className="scroll-div">
             <div className="users-main-div">
-              <Row column1='نام و نام خانوادگی' column2='نام کاربری' column3='شماره تلفن' />
+              <Row column1='نام و نام خانوادگی' column2='نام کاربری' column3='شماره تلفن'>
+                <p className="row-tiles">نوع کاربر</p>
+              </Row>
               {
-              filteredUsers.map(user => <Row key={user.id} column1={user.name} column2={user.userName} column3={user.phone} />)
+              filteredUsers.map(user => 
+              <Row key={user.id} column1={user.name} column2={user.userName} column3={user.phone}>
+                <p className="row-tiles">{user.userType == 'admin' ? 'مدیر' : 'کاربر'}</p>
+              </Row>)
               }
             </div>
           </div>

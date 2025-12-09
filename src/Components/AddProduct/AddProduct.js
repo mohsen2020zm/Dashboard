@@ -11,31 +11,32 @@ export default function AddProduct() {
     <div className='dash-page-content-parent'>
         <div className='container'>
             <p className='page-titles'>اضافه کردن محصول</p>
-            <div className="add-pros-inputs-parent-div">
+            <form className="add-pros-inputs-parent-div">
                 <div className="add-pros-input-div">
                     <p className='add-pros-input-title'>نام محصول:</p>
-                    <input type="text" className='add-pros-input' />
+                    <input type="text" name='productName' className='add-pros-input' />
                 </div>
                 <div className="add-pros-input-div">
                     <p className='add-pros-input-title'>قیمت محصول:</p>
-                    <input type="text" className='add-pros-input' />
+                    <input type="text" name='price' className='add-pros-input' />
                 </div>
                 <div className="add-pros-input-div">
                     <p className='add-pros-input-title'>توضیحات:</p>
-                    <textarea className='add-pros-description-input' />
+                    <textarea name='description' className='add-pros-description-input' />
                 </div>
                 <div className="add-pros-input-div">
                     <label className='add-pros-file-label' htmlFor='add-file'>آپلود عکس</label>
                     <input
                      className='add-pros-file-input'
                      type='file'
+                     name='img'
                      id='add-file'
                      accept='.jpg,.jpeg,.png' 
                      onChange={e => fileInputChange(e) }/>
                     <p className="add-pros-file-name">{fileName}</p>
                 </div>
-            </div>
-            <button className='add-pros-btn'>اضافه کردن</button>
+                <input type='submit' className='add-pros-btn' value='اضافه کردن' onClick={e => e.preventDefault()} />
+            </form>
         </div>
     </div>
   )

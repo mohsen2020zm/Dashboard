@@ -144,6 +144,7 @@
     "users": [
         {   
             "id": 1,
+            "userType": "admin",
             "name": "علی علیزاده",
             "userName": "ali_az",
             "password": "m264adFF56",
@@ -151,6 +152,7 @@
         },
         {   
             "id": 2,
+            "userType": "user",
             "name": "حسین مهدیزاده",
             "userName": "hosein_65",
             "password": "m264adFF56",
@@ -158,6 +160,7 @@
         },
         {   
             "id": 3,
+            "userType": "user",
             "name": "محمد محمدرضایی",
             "userName": "mohammad_9523",
             "password": "m264adFF56",
