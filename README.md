@@ -22,7 +22,7 @@ A **Admin Dashboard** project built with **React.js**.
 
 ### 1. Clone the repository
 ```bash
-git https://github.com/mohsen2020zm/Dashboard
+git clone https://github.com/mohsen2020zm/Dashboard
 cd Dashboard
 ```
 
